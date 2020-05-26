@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Portal Universidad de Pamplona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="./style-header.css">
+    <link rel="stylesheet" href="./style-menu.css">
+    <link rel="icon" href="./res/favicon-2.png">
+</head>
+
+<body class="animate__animated animate__fadeIn">
+    <div class="loader-page"></div>
+    <header id="header" class="header-grid">
+        <div class="position-logo heigth-content">
+            <div class="heigth-content sombra">
+                <a href="" target="">
+                    <img class="logo-u" src="./res/logoU.png" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <nav class="navigator ">
+            <ul>
+                <li class="heigth-content">
+                    <div class=""></div>
+                    <a href="" class="inicio">
+                        <div class="texto-a">
+                            <p class="texto texto-hover">Inicio</p>
+                        </div>
+                    </a>
+                    </div>
+                </li>
+                <li class="heigth-content">
+                    <div class="">
+                        <a href="" class="universidad">
+                            <div class="texto-a">
+                                <p class="texto texto-hover">Universidad de Pamplona</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="heigth-content">
+                    <div class="">
+                        <a href="" class="ayuda">
+                            <div class="texto-a">
+                                <p class="texto texto-hover">Ayuda</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="menu" class="menu">
+        <div class="menu-grid">
+            <aside class="noticias">
+                <div>
+                    <div>
+
+                    </div>
+                </div>
+            </aside>
+            <section class="login">
+                <div>
+                    <div class="imagen">
+                        <div id="" class="container">
+                            <div class="con">
+                                <img id="slider" name="sliderimg" src="" class="img" />
+                            </div>
+                            <ul class="menu-slider">
+                                <li>
+                                    <span id="c1" value=0></span>
+                                </li>
+                                <li>
+                                    <span id="c2" value=1></span>
+                                </li>
+                                <li>
+                                    <span id="c3" value=2></span>
+                                </li>
+                                <li>
+                                    <span id="c4" value=3></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-menu">
+                        <div>
+                            <!-- Formulario de inicio de sesion -->
+                            <form id="form_login" name="form_login">
+                                <div>
+                                    <div>
+                                        <h1>Iniciar sesión</h1>
+                                    </div>
+                                    <label>
+                                        <!-- Solicitud Usuario -->
+                                        <div>
+                                            <span>Usuario </span>
+                                        </div>
+                                        <div>
+                                            <input id="username" name="username" type="text" placeholder="Usuario">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <!-- Solicitud Contraseña -->
+                                        <div>
+                                            <span>Contraseña </span>
+                                        </div>
+                                        <div>
+                                            <input id="password" name="password" type="password"
+                                                placeholder="Contraseña">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <!-- Recuperacion de contraseña -->
+                                    <a href="#">
+                                        <span>¿Olvidaste tu contraseña?</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <!-- Boton que envia el formulario -->
+                                    <div>
+                                        <input id="btn_iniciar_sesion" name="btn_iniciar_sesion" type="submit"
+                                            value="INICIAR SESION">
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- Check para recordar usuario -->
+                                    <input type="checkbox" id="recordar_user_name" name="recordar_user_name">
+                                    <label for="recordarUserName">Recordar nombre de usuario</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <section>
+                            <!-- Politicas y terminos -->
+                            <div>
+                                <nav>
+                                    <a href="./privacy.html#terminos" target="_blank">
+                                        <span>Universidad de Pamplona</span>
+                                    </a>
+                                    <a href="./privacy.html#terminos" target="_blank">
+                                        <span>Terminos</span>
+                                    </a>
+                                    <a href="./privacy.html#politicas" target="_blank">
+                                        <span>Politicas de privacidad</span>
+                                    </a>
+                                    <a href="./privacy.html#cookies" target="_blank">
+                                        <span>Cookies</span>
+                                    </a>
+                                    <a href="./privacy.html#wilmer_rs" target="_blank">
+                                        <span>Wilmer RS* Inc</span>
+                                    </a>
+                                </nav>
+                            </div>
+                        </section>
+            </section>
+        </div>
+        </div>
+        </section>
+        </div>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $(".loader-page").css({ visibility: "hidden", opacity: "0" });
+        });
+    </script>
+    <script src="./script.js"></script>
+    <script>sliderImagenes(0);</script>
+</body>
+
+</html>
